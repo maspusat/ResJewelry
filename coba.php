@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 // Jika koneksi berhasil, Anda dapat melakukan operasi database di sini
 
 // Contoh query
-$sql = "SELECT * FROM nama_tabel";
+$sql = "SELECT * FROM pembelian";
 $result = $conn->query($sql);
 
 // Memeriksa hasil query
