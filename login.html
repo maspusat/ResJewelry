@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login - RES JEWELRY</title>
+    <link rel="icon" href="image/icon.ico">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        .login-container {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFCCCC;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="TentangKami.html">Tentang Kami</a>
+        <a href="Catalog.html">Catalog</a>
+        <a href="CaraPesan.html">Cara Pesan</a>
+    </div>
+
+    <div class="content">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form method="post" action="masok.php">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
