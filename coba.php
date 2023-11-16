@@ -13,22 +13,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Jika koneksi berhasil, Anda dapat melakukan operasi database di sini
-
-// Contoh query
-$sql = "SELECT * FROM pembelian";
-$result = $conn->query($sql);
-
-// Memeriksa hasil query
-if ($result->num_rows > 0) {
-    // Proses data
-    while ($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["id"] . " - Name: " . $row["name"] . "<br>";
-    }
-} else {
-    echo "0 results";
-}
-
 // Menutup koneksi
 $conn->close();
 ?>
